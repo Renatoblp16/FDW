@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    html, body { 
+        font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px:
+    }
+    table {
+        margin: 1px auto;
+    }
+    table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td{
+        padding: 0.5rem 3rem;
+    }
+    th {
+        background-color:chartreuse;
+        color:chocolate;
+    }
+    tr:nth-child(even){
+        background-color:cornflowerblue;
+        color:darkgoldenrod;
+    }
+    tr:hover {
+        background-color:darkgreen;
+        color:darkred;
+    }
+    .disc {
+        background-color:darkslategrey;
+        color:dimgrey;
+        vertical-align: left;
+        text-align: top;
+        padding-left: 0.4rem;
+    }
+    tfoot {
+        background-color: aqua;
+        color: blue;
+    }
+        </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Disciplina</th>
+                <th>Nome</th>
+                <th>Nota 01</th>
+                <th>Nota 02</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3" class="disc">Web</td>
+                <td>Ana</td>
+                <td>89</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>90</td>
+                <td>91</td>
+                
+            </tr>
+            <tr>
+                <td>Gabi</td>
+                <td>79</td>
+                <td>94</td>
+                
+            </tr>
+            <tr>
+                <td rowspan="3" class="disc">Algoritimos</td>
+                <td>Ana</td>
+                <td>74</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>82</td>
+                <td>79</td>
+                
+            </tr>
+            <tr>
+                <td>Gabi</td>
+                <td>79</td>
+                <td>94</td>
+                
+            </tr>
+        </tbody>
+        <tfoot><tr>
+            <td colspan="2">Notas do primeiro semestre</td>
+            <td colspan="2">Alunos de ADS</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
